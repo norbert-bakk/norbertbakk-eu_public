@@ -1,0 +1,183 @@
+<%- include("header") %>
+<%- include("navbar") %>
+
+<div class="project-carousel-body">
+  <div class="project-carousel-wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="project-carousel-container">
+
+      <li class="project-card" id="portfolio-qr-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/qr-code-generator.png" alt="" draggable="false"></div>
+        <h2 class="">QR Code Generator</h2>
+        <span>Download or preview your QR image of the desired URL.</span>
+      </li>
+
+      <li class="project-card" id="portfolio-umd-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/udm.png" alt="" draggable="false"></div>
+        <h2 class="">User Management System</h2>
+        <span>Perform CRUD operations on users using UI.</span>
+      </li>
+
+      <li class="project-card" id="portfolio-weatherapp-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/weather-app.png" alt="" draggable="false"></div>
+        <h2 class="">Weather App</h2>
+        <span>Real-time weather information using OpenWeather's API.</span>
+      </li>
+
+      <li class="project-card" id="portfolio-simon-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/simon-game.png" alt="" draggable="false"></div>
+        <h2 class="">Simon Game</h2>
+        <span>A simple web based simon game - click the card for instructions.</span>
+      </li>
+
+      <li class="project-card" id="portfolio-drumkit-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/drumkit.png" alt="" draggable="false"></div>
+        <h2 class="">Drumkit</h2>
+        <span>Try out the drumkit in your browser!</span>
+      </li>
+
+      <li class="project-card special" id="portfolio-personal-website-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/personal-site.png" alt="" draggable="false"></div>
+        <h2 class="">Personal Website & Portfolio</h2>
+        <span>Creation and challenges of the website.</span>
+      </li>
+
+      <li class="project-card special" id="portfolio-road-ahead-card">
+        <div class="card-img"><img src="/images/portfolio-thumbnails/road-ahead.png" alt="" draggable="false"></div>
+        <h2 class="">The Road Ahead</h2>
+        <span>Whats next?</span>
+      </li>
+
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-qr">
+  <div class="popup-content" id="portfolio-popup-qr-content">
+    <h2>QR Code Generator</h2>
+    <p>A QR code generator application with a functionality to download the generated QR code image.
+      <br><br>The design was inspired by Apple's interface design.
+    </p>
+    <h2>How to use:</h2>
+    <p>Paste in your URL into the input field, than click the "Generate" button to see your QR code. 
+      <br><br>You can also download the image by clicking the "Download QR Code" button.
+    </p>
+    <h2>Stack used:</h2>
+    <p>HTML5/CSS3 & Javascript
+      <br><br>Node.js and libraries such as: express, nodemon, fs, path, ejs, inquirer, qr-image.
+    </p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-qr-demo">Live Demo</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-umd">
+  <div class="popup-content" id="portfolio-popup-umd-content">
+    <h2>User Management System</h2>
+    <p>A user(s) management system application with CRUD functionality using UI.
+      <br><br>Simply create, read, update, delete users from a MongoDB with the UI - you can also upload and modify profile images for each user.
+    </p>
+    <h2>Stack used:</h2>
+    <p>HTML5/CSS3, Javascript, MongoDB Atlas, Node.js and libraries such as:
+      <br><br>express, express-session, mongoose, nodemon, fs, path, ejs, array manipulation functions, multer, dotenv, bootstrap, font awesome, jQuery, datatables
+    </p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-umd-demo">Live Demo</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-weatherapp">
+  <div class="popup-content" id="portfolio-popup-weatherapp-content">
+    <h2>Weather App</h2>
+    <h2>How to use:</h2>
+    <p>Just write in the location that you wish to know the weather information for.
+      <br><br>No worries! If the location is invalid, it will throw back a 404 error.
+    </p>
+    <h2>Stack used:</h2>
+    <p>HTML5/CSS3 & JavaScript.
+      <br><br>OpenWeather API & parsing, fetching of the data returned by the API.
+    </p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-weatherapp-demo">Live Demo</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-simon">
+  <div class="popup-content" id="portfolio-popup-simon-content">
+    <h2>Simon Game</h2>
+    <h2>How to play:</h2>
+    <p> Start the game by pressing any button. 
+      <br><br>The game will start showing randomly picked colours.
+      <br><br>After the sequence is shown, you have to repeat it by clicking on the colours in the same order.
+      <br><br>After each successful round, the game will add one more colour to the sequence.
+    </p>
+    <h2>Stack used:</h2>
+    <p>HTML5/CSS3 & JavaScript with jQuery library</p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-simon-demo">Live Demo</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-drumkit">
+  <div class="popup-content" id="portfolio-popup-drumkit-content">
+    <h2>Drumkit</h2>
+    <h2>How to play:</h2>
+    <p> If you ever felt like trying out your inner rockstar, this is your chance!
+      <br><br>Simply press the keys on your keyboard that are displayed on the buttons to play the sounds.
+    </p>
+    <h2>Stack used:</h2>
+    <p>HTML5/CSS3 & JavaScript</p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-drumkit-demo">Live Demo</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-personal-website">
+  <div class="popup-content" id="portfolio-popup-personal-website-content">
+    <h2>Personal Website & Portfolio</h2>
+    <p> 
+      My website is part of my portfolio and presented some interesting challenges during development. The primary challenge was optimizing it for a single server to reduce costs, requiring me to expand my knowledge of Node.js and Express.js to manage requests, serve static files, and handle dependencies efficiently.
+      <br><br>Additionally, I had to ensure the website's responsive design worked seamlessly across all devices and screen sizes.
+      <br><br>While most projects are in my portfolio, some modular ones (but fully-fledged) and a Keeper App made with React.js remain unreleased due to compatibility reasons, but you can find them in the website's public repository.
+    </p>
+    <div class="button-wrapper">
+      <button class="popup-button" id="portfolio-popup-personal-website-demo">Public Repository</button>
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="popup-container" id="portfolio-popup-road-ahead">
+  <div class="popup-content" id="portfolio-popup-road-ahead-content">
+    <h2>The Road Ahead</h2>
+    <p> 
+      "Change is the only constant," as the saying suggests.
+      <br><br>Since I continually seek fresh challenges, I'm in the process of acquiring proficiency in new technologies and frameworks.
+      <br><br>At the moment, I'm engaged in the development of an extensive React.js application with Node.js serving as the backend.
+      <br><br>The project's overarching aim is to enhance my expertise in the MERN stack and construct an open-source budget management application, codenamed "Capital Crescendo".
+      <br><br>Furthermore, it provides an opportunity to collaborate on intricate APIs and data manipulation, serving as a bridge to becoming part of the open-source community.
+    </p>
+    <div class="button-wrapper">
+      <button class="popup-button popup-close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/index-menu-script.js" type="text/javascript" defer></script>
+<script src="scripts/carousel-script.js" type="text/javascript" defer></script>
+<script src="scripts/navbar-script.js" type="text/javascript" defer></script>
+<script src="scripts/portfolio-showcase-logic.js" type="text/javascript" defer></script>
+
+
+<%- include("footer") %>

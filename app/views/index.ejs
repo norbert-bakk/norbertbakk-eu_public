@@ -1,0 +1,45 @@
+<%- include("header") %>
+
+<div class="grid-container">
+
+    <%- include("index-header") %>
+
+    <div class="menu-container">
+        <div class="grid-menu">
+
+            <div class="main-menu">
+                <p class="menu-option" id="portfolio">portfolio</p>
+                <p class="menu-option" id="experience">professional experience</p>
+                <p class="menu-option" id="socials">socials</p>
+                <p class="menu-option" id="contact-me">contact me</p>
+                <p class="menu-option" id="about-me">about me</p>
+            </div>
+
+            <div class="sub-menu" id="smenu-socials" style="display: none;">
+                <p class="smenu-title">socials</p>
+                <a class="smenu-option smenu-redirect" href="https://www.linkedin.com/in/norbert-b-270035178" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="smenu-option smenu-redirect" href="https://github.com/norbert-bakk" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="smenu-option smenu-redirect" href="https://stackoverflow.com/users/14335104/norbert" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+                <a class="smenu-option smenu-redirect" href="https://hashnode.com/@norbert99" target="_blank" rel="noopener noreferrer">Hashnode</a>
+                <button class="smenu-back-btn hover-text" id="socials-back-btn">Return</button>
+            </div>
+
+            <div class="sub-menu smenu-contact-me" style="display: none;">
+                <p class="smenu-title" id="contact-me-smenu">contact me</p>
+                <div class="contact-card" id="contact-card"></div>
+                <a href="mailto:bakknorbert@outlook.com" class="smenu-back-btn">Mailto</a>
+                <button class="smenu-back-btn" id="contactme-back-btn">Return</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="painting-container">
+        <div class="painting-box">
+            <img class="decorative-paiting" src="images/arts/wave_coding.png">
+        </div>
+    </div>
+
+    <script src="scripts/index-main-script.js" type="text/javascript" defer></script>
+    <script src="scripts/index-menu-script.js" type="text/javascript" defer></script>
+<%- include("footer") %>

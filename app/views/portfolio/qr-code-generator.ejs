@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/styles/portfolio-styles/qr-code-generator-styles.css">
+</head>
+<body>
+
+    <div id="welcome-message" class="centered-object">
+        <h1>Welcome to QR Code generator!</h1>
+        <span>Enter your URL into the field below, click the "Generate" button, 
+            after which you can download your newly generated QR code image!
+        </span>
+        <div class="author">
+            <p>Created by Norbert Bakk</p>
+            <a href="https://www.linkedin.com/in/norbert-b-270035178" target="_blank">LinkedIn</a>
+            <a href="https://github.com/norbert-bakk" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div id="url-input-window" class="centered-object">
+        <p class="">Please input your Uniform Resource Locator (URL):</p>
+        <form method="POST" action="/api/generate-qr-code" class="input-area">
+            <input type="url" id="url-input" name="urlToConvert" required>
+            <button id="execute-button" class="button" style="display:none" type="submit">Generate</button>
+        </form>
+    </div>
+
+    <div id="qr-code-window" class="centered-object hidden">
+        <img id="generated-qr-image" class="qr-window-image" src="/images/portfolio-resources/qr-code-res/generated-qr-image/qr-img.png">
+        <button id="download-button" class="button">Download QR Code</button>
+        <button id="go-back-button" class="button">Generate Another One</button>
+    </div>
+
+    <script src="/scripts/portfolio-scripts/qr-code-utils.js" type="text/javascript" defer></script>
+    
+</body>
+</html>
